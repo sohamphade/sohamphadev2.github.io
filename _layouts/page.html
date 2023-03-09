@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <h4>{{ page.tagline }}</h4>
+  {{ content }}
+</article>
+
+{% if page.nextlink %}
+<a style="float: right" href="{{ page.nextlink | absolute_url }}index.html">Next</a>
+<br>
+{% endif %}

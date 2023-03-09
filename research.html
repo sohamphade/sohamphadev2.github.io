@@ -1,0 +1,37 @@
+---
+layout: default
+title: Research
+---
+
+<!-- <p>
+My research revolves around the theoretical innovations and methodological developments that account for human factors such as preferences and behavioral responses in the design and analysis of scenarios that we see in several industrial applications, social and economic networks, operations research, and information technologies.
+My current research can roughly be classified along the following themes.
+<p> -->
+
+<h2>Projects</h2>
+
+{% for page in site.pages %}
+{% if page.type == "project" %}
+<a class="project-titles" href="{{ page.url | absolute_url }}index.html" style="text-decoration: none;">
+  <div class="card">
+    <div class="row" style="position: relative;">
+      <div class="lcolumn">
+        <div class="container">
+        <h3 class="card-title"><b>{{ page.title }}</b></h3>
+        <p>{{ page.tagline}}</p>
+        {% if page.collaborators %}
+        <p>Collaborators: {{ page.collaborators}}</p>
+        {% endif %}
+        </div>
+      </div>
+      <div class="rcolumn">
+      <img src="{{ page.imagelink | absolute_url }}" alt="Avatar" style="width:100%; margin: auto">
+      </div>
+    </div>
+  </div>
+</a>
+{% endif %}
+{% endfor %}
+
+
+

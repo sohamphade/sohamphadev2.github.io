@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+
+
+<div class="bcolumn">
+
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+  <h4>{{ page.tagline }}</h4>
+  {{ content }}
+</article>
+
+</div>
+
+{% if page.nextlink %}
+<a style="float: right" href="{{ page.nextlink | absolute_url }}index.html">Next</a>
+<br>
+{% endif %}
+
+
+<!-- {% if site.related_posts != empty %}
+<aside class="related">
+  <h3>Related posts</h3>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
+--->
+
+<!---
+     <footer class="footer">
+        <small>
+          &copy;
+          <time datetime="{{ site.time | date_to_xmlschema }}"
+            >{{ site.time | date: '%Y' }}</time
+          >. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        </small>
+      </footer>
+
+--->

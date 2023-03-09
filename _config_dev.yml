@@ -1,0 +1,63 @@
+# Setup
+title: Soham Phade
+url: "file:///Users/sphade/Desktop/website/website-v2/"
+# url: "http://people.eecs.berkeley.edu/~soham_phade"
+paginate: 1
+# baseurl: "_site"
+# baseurl: ""
+permalink: pretty
+environment: development
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - files/
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
+author:
+  name: Soham Phade
+  url: http://people.eecs.berkeley.edu/~soham_phade
+  email: soham_phade@berkeley.edu
+
+# Custom vars
+version: 3.0.0
+
+# Navbar page list
+nav:
+
+  - title: About
+    url: /
+
+  - title: Research
+    url: /research/
+
+#  - title: CV
+#    url: /assets/
+
+  - title: Blog
+    url: /archive/
+
+
+
+

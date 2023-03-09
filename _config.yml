@@ -45,6 +45,7 @@ exclude:
   - README.md
   - files/
   - docs/
+  - vendor/
 
 sass:
   sass_dir: _sass

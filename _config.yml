@@ -21,7 +21,7 @@
 # Setup
 title: Soham Phade
 domain: sohamphade.github.io
-url: "https://sohamphade.github.io/sohamphadev2.github.io"
+url: "https://sohamphade.github.io"
 paginate: 1
 baseurl: "/_site"
 #baseurl: ""

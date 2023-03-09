@@ -1,6 +1,224 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: Home
 ---
+
+
+<h1 style="text-align:center;font-size:60px" > {{ "Soham Phade" }}</h1>
+
+<div class="row">
+  <div class="lcolumn">
+    <br><br><br>
+    <p>
+      I am a Research Scientist in the <a href="https://einstein.ai/the-ai-economist" target="_blank">AI Economist</a> team at <a href="https://einstein.ai" target="_blank">Salesforce Research</a>.
+      Prior to joining <a href="https://www.salesforce.com" target="_blank">Salesforce</a>, I graduated with a PhD degree in the <a href="http://www.eecs.berkeley.edu/" target="_blank">EECS Department</a>
+      at <a href="https://www.berkeley.edu" target="_blank">UC Berkeley</a>.
+      <!--advised by 
+      <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/anantharam.html" target="_blank">Prof. Venkat Anantharam</a>.
+      --->
+      You can reach me at:
+    </p>
+
+    <p>
+      <b>Email:</b> soham underscore phade at berkeley dot edu
+    </p> 
+
+    
+    <p>
+      <a href="{{site.url}}/files/CV.pdf">Here</a> is my curriculum vitae.
+    </p>
+
+<!--
+    <p>
+      I am in the academic job market this year. 
+      <a href="http://people.eecs.berkeley.edu/~soham_phade/files/JMP.pdf" target="_blank">Here</a> is my job market paper. In this short video, I give a quick description of the paper.
+    </p>
+
+    <video width="100%" controls>
+  <source src="http://people.eecs.berkeley.edu/~soham_phade/files/CPTtalk.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+---> 
+  </div>
+  <div class="rcolumn">
+    <br><br><br>
+    <img  src="{{ 'assets/facepic3.jpeg' | absolute_url }}" width="300" height="400">
+  </div>
+</div>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+<h2>
+Projects
+</h2>
+
+{% for page in site.pages %}
+{% if page.type == "project" and page.location == "front" %}
+<a class="project-titles" href="{{ page.url | absolute_url }}index.html" style="text-decoration: none;">
+<div class="card">
+  <div class="row" style="position: relative;">
+    <div class="lcolumn">
+      <div class="container">
+      <h3 class="card-title"><b>{{ page.title }}</b></h3>
+      <p>{{ page.tagline}}</p>
+      {% if page.collaborators %}
+      <p>Collaborators: {{ page.collaborators}}</p>
+      {% endif %}
+      </div>
+    </div>
+    <div class="rcolumn">
+    <img src="{{ page.imagelink | absolute_url }}" alt="Avatar" style="width:100%; margin: auto">
+    </div>
+  </div>
+</div>
+</a>
+{% endif %}
+{% endfor %}
+
+<a href="{{ "/research/" | absolute_url }}index.html">
+<div class="card" style="text-align:center;border-style: solid">
+  more
+</div>
+</a>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+<h2>
+  About
+</h2>
+<p>
+      In am interested in the design of networks and markets
+      primarily from an economic and algorithmic point of view.
+      My topics of interest include game theory, economics, behavioral psychology, decision theory, machine learning, reinforcement learning, and generative AI.
+    </p>
+
+      <!--
+      Its applications are universal -- social networks, financial networks, transportation networks, communication networks, energy networks, computing networks, labor markets, matching markets, and emissions trading.
+      This involves figuring out the optimal architectures to facilitate communication between the agents in the network and allocate resources optimally.
+      It can help in improving social welfare in public policies, increasing customer satisfaction in commercial activities, or reducing global GHG emissions.
+      Examples of communication architectures include setting prices, agent bidding, credit assignment. 
+      Incentive-centered design of market-based mechanisms and algorithms for increasing social welfare.
+      --->
+
+<!--     <p>
+      As part of my PhD thesis titled <a href="{{site.url}}/files/SohamThesis.pdf">Behavioral Network Economics</a>, I focused
+      on the role of behavioral models from psychology and decision theory (such as <a href="https://en.wikipedia.org/wiki/Cumulative_prospect_theory" target="_blank">Cumulative Prospect Theory</a>) in building efficient commercial systems that interact with humans. For more, see my post on 
+      <a href="{{ 'basd/index.html' | absolute_url }}"> Behavior-Aware System Design</a>.
+    </p> -->
+
+    <!--
+    <p>
+      I am a final-year PhD student in the 
+      <a href="http://www.eecs.berkeley.edu/" target="_blank">EECS Department</a> 
+      at <a href="https://www.berkeley.edu" target="_blank">UC Berkeley</a>, advised by 
+      <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/anantharam.html" target="_blank">Prof. Venkat Anantharam</a>.
+      I am a part of the <a href="http://bliss.eecs.berkeley.edu" target="_blank">BLISS lab</a>, and I used to sit in Cory 264 before our world became fully online! 
+       
+
+    --->
+
+    <p>
+      In Summer 2019, I interned as an Applied Scientist at Amazon Search Science and AI. 
+      <!--I was a part of team MIDAS lead by <a href="https://www.cs.utexas.edu/~inderjit/" target="_blank">Inderjit Dhillon</a>.
+    </p>
+
+    <p>
+      --->
+      Before joining UC Berkeley, I graduated from the <a href="http://www.iitb.ac.in/" target="_blank">Indian Institute of Technology, Bombay</a> with a B.Tech. in <a href="http://www.ee.iitb.ac.in/web" target="_blank">Electrical Engineering</a> 
+      with Honors and a Minor in <a href="https://www.cse.iitb.ac.in/" target="_blank">Computer Science and Engineering</a>. 
+    </p>
+      <!-- During my undergraduate studies, I was fortunate to work with <a href="https://www.ee.iitb.ac.in/web/faculty/homepage/borkar/">Prof. Vivek Borkar</a>, <a href="https://www.ee.iitb.ac.in/~karandi/">Prof. Abhay Karandikar</a> and <a href="https://en.wikipedia.org/wiki/Narendra_Karmarkar/">Dr. Narendra Karmarkar</a> on several interesting projects.
+      I also spent three exciting months at the <a href="https://minghsiehee.usc.edu">Ming Hsieh Department of Electrical Engineering</a>, <a href="https://viterbischool.usc.edu">Viterbi School of Engineering</a>, <a href="https://www.usc.edu">University of Southern California (USC)</a>, working with <a href="http://www-bcf.usc.edu/~rahuljai/Welcome.html">Prof. Rahul Jain</a>  --->
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+
+<h2>
+  Selected Publications
+</h2>
+<ul>
+  <li>
+    <b>Learning in Games with Cumulative Prospect Theoretic Preferences.</b> <br> 
+    Soham Phade and Venkat Anantharam <br>
+    Dynamic Games and Applications (2021): 1-42 <br>
+    <a href="https://link.springer.com/article/10.1007/s13235-021-00398-9" target="_blank">[link]</a>
+    <a href="https://arxiv.org/abs/1804.08005" target="_blank">[ArXiv]</a>
+  </li>
+  <li>
+    <b>Optimal Resource Allocation over Networks via Lottery-Based Mechanisms.</b> <br> 
+    Soham Phade and Venkat Anantharam <br>
+    International Conference on Game Theory for Networks (pp 51-70), Springer, Cham (2019) <br>
+    <mark>Best Paper Award</mark> at the
+    9th EAI International Conference on Game Theory for Networks, GameNets 2019, April 25-26, Paris. <br>
+    <a href="https://link.springer.com/chapter/10.1007/978-3-030-16989-3_4" target="_blank">[link]</a>
+    <a href="https://arxiv.org/abs/1812.00501" target="_blank">[ArXiv]</a>
+    <a href="{{ 'research/index.html#short_video' | absolute_url }}">[Short Video Presentation]</a>
+  </li>
+  <li>
+    <b>On the Geometry of Nash and Correlated Equilibria with Cumulative Prospect Theoretic Preferences.</b> <br> 
+    Soham Phade and Venkat Anantharam <br>
+    Decision Analysis 16(2), 142-156 (2019) <br>
+    <a href="https://pubsonline.informs.org/doi/abs/10.1287/deca.2018.0378?casa_token=7J9MUcsbZl4AAAAA:FArUlacTEA378xkYhAZXiy8JU7r78vGt__aQhm0RPs927EnOTR-LC_asRPrDS6ydaQr0yOXNcA" target="_blank">[link]</a>
+    <a href="https://arxiv.org/abs/1712.00859" target="_blank">[ArXiv]</a>
+  </li>
+  <li>
+    <b>A Distributed Boyle-Dykstra-Han Scheme.</b> <br> 
+    Soham Phade and Vivek Borkar <br>
+    SIAM journal on Optimization 27(3): 1880-1897 (2017) <br>
+    <a href="https://epubs.siam.org/doi/pdf/10.1137/15M1034830?casa_token=sCVFAr_akXsAAAAA:61_XFInxLp7UNtR9GY3R2fNmvGAVtOJ7yyjUdMUanU30BC_Z3Iak1w2nUESRzHHvc60fPZdiWXM" target="_blank">[link]</a>
+  </li>
+</ul>
+
+
+<!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+<h2>
+  Articles in Progress
+</h2>
+<ul>
+  <li>
+    <b>Utility-Based Resource Allocation and Pricing for
+Serverless Computing.</b> <br> 
+    Vipul Gupta*, Soham Phade*, Thomas Courtade, Kannan Ramchandran. <br>
+    <a href="https://arxiv.org/abs/2008.07793" target="_blank">[ArXiv]</a>
+  </li>
+   <li>
+    <b>Mechanism Design for Cumulative Prospect Theoretic Agents: A General Framework and the Revelation Principle.</b> <br> 
+    Soham Phade and Venkat Anantharam <br>
+    <a href="https://arxiv.org/abs/2101.08722" target="_blank">[ArXiv]</a>
+  </li>
+  <li>
+    <b>Black-box Strategies and Equilibrium for CPT Players.</b> <br> 
+    Soham Phade and Venkat Anantharam <br>
+    <a href="https://arxiv.org/abs/2004.09592" target="_blank">[ArXiv]</a>
+  </li>
+  <li>
+    <b>On the Impossibility of Convergence of Mixed Strategies with No-Regret Learning.</b> <br> 
+    Vidya Muthukumar*, Soham Phade*, Anant Sahai <br>
+    <a href="https://arxiv.org/abs/2012.02125" target="_blank">[ArXiv]</a>
+  </li> 
+  <li>
+    <b>A Fair and Stable Solution Concept for Balanced Cooperative Games.</b> <br> 
+    Soham Phade and Venkat Anantharam <br>
+  </li> 
+</ul>
+
+<p> &emsp; *Equal contribution</p> -->
+
+
+
+
+
+<!-- <div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div> --->

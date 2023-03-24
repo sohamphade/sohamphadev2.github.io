@@ -12,14 +12,14 @@ collaborators: YE Eringbas, L Butler, K Ramchandran (UC Berkeley)
 
 *This post is about the general project description. For specific details about the paper "Interactive Learning with Smart Pricing for Optimal and Stable Allocations in Markets" see [this]({{ '/learning_pricing_markets/index.html' | absolute_url }}) post.*
 
+<a href="{{site.url}}/files/proposal.pdf">White Paper</a>
 
-
-Artificial Intelligence (AI) has proved to be valuable in several market and business related tasks such as targeted marketing, personalized recommendations, process monitoring, logistics, optimizing merchandize, resource utilization, assess resource availability, anticipate customer demand, and product pricing.
+<!-- Artificial Intelligence (AI) has proved to be valuable in several market and business related tasks such as targeted marketing, personalized recommendations, process monitoring, logistics, optimizing merchandize, resource utilization, assess resource availability, anticipate customer demand, and product pricing.
 Besides it has also been helful in fraud detection, customer service and support.
 Machine Learning (ML) and Data Analytics (DA) tools have 
 
-<!-- Different types of [market designs](https://gsb-faculty.stanford.edu/susan-athey/economics-980-topics-market-design/) are used for various economic activities (i.e. input of resources, production process, and output of products-goods or services).
-For example, auction markets are used by the auctioneer (often a governement) to procure goods or allocate natural resources,  -->
+Different types of [market designs](https://gsb-faculty.stanford.edu/susan-athey/economics-980-topics-market-design/) are used for various economic activities (i.e. input of resources, production process, and output of products-goods or services).
+For example, auction markets are used by the auctioneer (often a governement) to procure goods or allocate natural resources,
 
 Resource allocation ard market design are central to many economic activities. 
 Although these have been studied for centuries the technological developments in the recent past have led to
@@ -31,4 +31,4 @@ compute power the more you can process at any given node
 3. Artificial Intelligence → Enhanced data processing, learning, agent assisting through
 recommendation systems
 4. Markets + AI → Interactive solutions for multi-agent systems to enhance decision making and
-resource allocation in multi-sided markets.
+resource allocation in multi-sided  markets.-->

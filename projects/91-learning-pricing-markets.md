@@ -9,3 +9,5 @@ imagelink: assets/learning_pricing_markets.png
 location: front
 collaborators: YE Eringbas, K Ramchandran (UC Berkeley)
 ---
+
+<a href="https://arxiv.org/pdf/2212.06891.pdf">Paper</a> <a href="{{site.url}}/files/informs2022.pdf">Slides</a>

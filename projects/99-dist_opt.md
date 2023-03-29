@@ -9,3 +9,4 @@ imagelink: assets/net-opt.png
 collaborators: VS Borkar (IIT Bombay)
 ---
 
+<a href="https://epubs.siam.org/doi/pdf/10.1137/15M1034830?casa_token=sCVFAr_akXsAAAAA:61_XFInxLp7UNtR9GY3R2fNmvGAVtOJ7yyjUdMUanU30BC_Z3Iak1w2nUESRzHHvc60fPZdiWXM">Journal Paper</a>
